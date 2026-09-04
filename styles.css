@@ -7,3 +7,12 @@
 @media(max-width:420px){.site-header nav{gap:14px;font-size:.8125rem}.hero .eyebrow{font-size:12px;letter-spacing:.06em}.hero h1{font-size:2.85rem}.focus-flow{grid-template-columns:1fr}.focus-flow li{display:flex;gap:20px;padding:20px 0}.focus-flow p{margin:7px 0}.flow-number{margin-bottom:0}.hero-bottom>span{display:none}.hero-bottom{justify-content:flex-end}.hero-actions{gap:22px}.section-wrap{padding-left:20px;padding-right:20px}.project summary{grid-template-columns:20px 1fr 28px;gap:7px}.plus{width:28px;height:28px;flex-basis:28px}.plus:before,.plus:after{top:13px;left:7px}.project-body{padding-left:27px}.education p{font-size:.8125rem}.contact-inner{padding-left:20px;padding-right:20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{.hero,.contact{background:white;color:#17243a}.hero h1 span,.hero-description,.contact p,.contact-email{color:#17243a}.hero-aside,.hero-bottom,.hero-actions,.site-header nav,.project-toggle{display:none}.hero-inner,.section-wrap,.contact-inner{padding:24px;display:block}.hero h1{font-size:36px}.section-wrap{break-inside:auto}.project{break-inside:avoid}.project-body{display:block}.project-body>div{margin-bottom:15px}.about-intro{margin-bottom:30px}.site-footer{font-size:10px}.light.eyebrow{color:#334b70}}
+
+/* Personal portrait: preserve the complete supplied image at every viewport. */
+.hero-portrait{margin:0;align-self:center;min-width:0;width:100%;max-width:470px;justify-self:end}
+.hero-portrait img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:6px;background:#85868b}
+.hero-portrait figcaption{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px 16px;padding-top:17px;line-height:1.6}
+.hero-portrait figcaption strong{font-size:.9375rem;font-weight:500;color:#fff}
+.hero-portrait figcaption span{font-size:.8125rem;color:#b3c0d6}
+@media(max-width:760px){.hero-portrait{justify-self:start;max-width:430px}}
+@media print{.hero-portrait{max-width:160px;margin:20px 0}.hero-portrait figcaption strong,.hero-portrait figcaption span{color:#17243a}}
