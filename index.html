@@ -1,38 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edwin Charles Mathew</title>
-  <style>
-    body {
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-    }
-    header {
-      padding: 16px;
-      background-color: #f0f0f0;
-    }
-    main {
-      flex: 1;
-      display: flex;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Edwin Charles Mathew | Cybersecurity Engineer</title>
+  <meta name="description" content="Cybersecurity engineer working on Wazuh monitoring, vulnerability assessment, SOC workflows, and practical security automation with n8n, Shuffle, and Python.">
+  <meta property="og:title" content="Edwin Charles Mathew | Cybersecurity Engineer">
+  <meta property="og:description" content="Selected work in security operations, vulnerability assessment, and security automation.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Portfolio</h1>
-    <p>Hey, welcome to my portfolio.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Edwin Charles Mathew, home"><span class="monogram" aria-hidden="true">em<span>.</span></span><span class="brand-name">EDWIN CHARLES MATHEW</span></a>
+    <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a></nav>
   </header>
-  <main>
-    <iframe src="https://docs.google.com/document/d/e/2PACX-1vQF7hz-Tsdnn_S1nGphDdpleRZLFimCfgQrywoKsaLnJTe1aNQb5UCwye0k8j1d5_m2-1G6f2WTg18M/pub?embedded=true"></iframe>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow light">CYBERSECURITY ENGINEER / TRIVANDRUM, INDIA</p>
+          <h1 id="hero-title">Security that<br> works.<br> <span>Workflows that<br> follow through.</span></h1>
+          <p class="hero-description">I’m Edwin. I work on security monitoring, vulnerability assessment, and automation that connects alerts, people, and action.</p>
+          <div class="hero-actions"><a class="button button-blue" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="text-link on-dark" href="https://github.com/edwincm" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <figure class="hero-portrait">
+          <img src="edwin-headshot.png" alt="Edwin Charles Mathew smiling, wearing glasses and a navy shirt" width="1254" height="1254" fetchpriority="high" decoding="async">
+          <figcaption><strong>Edwin Charles Mathew</strong><span>Cybersecurity Engineer</span></figcaption>
+        </figure>
+      </div>
+      <div class="hero-bottom"><span>SOFTWARE ENGINEERING MEETS SECURITY OPERATIONS</span><a href="#work">SELECTED WORK BELOW <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="capabilities section-wrap" aria-labelledby="capabilities-title">
+      <div class="section-intro"><p class="eyebrow">WHAT I BRING</p><h2 id="capabilities-title">From finding the issue<br> to making the work easier.</h2></div>
+      <div class="capability-grid">
+        <article><span class="capability-index">01 / ASSESS</span><h3>Vulnerability assessment</h3><p>Review findings, investigate affected versions and context, and communicate practical remediation recommendations.</p><p class="tool-line">OWASP ZAP · Burp Suite · Python</p></article>
+        <article><span class="capability-index">02 / MONITOR</span><h3>Security operations</h3><p>Configure Wazuh, work with endpoint telemetry, and build monitoring and reporting views that support investigation.</p><p class="tool-line">Wazuh · IRIS · Grafana</p></article>
+        <article><span class="capability-index">03 / AUTOMATE</span><h3>Connected workflows</h3><p>Connect alerts, cases, approvals, and notifications through clearly documented security and business workflows.</p><p class="tool-line">n8n · Shuffle · Power Automate</p></article>
+      </div>
+    </section>
+
+    <section class="work section-wrap" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2 id="work-title">Built around real problems.</h2></div><p>A closer look at my contribution.<br> Generalized summaries; no client data.</p></div>
+      <div class="project-list">
+        <details class="project" id="project-wazuh">
+          <summary><span class="project-index">01</span><span class="project-overview"><span class="project-category">SECURITY OPERATIONS</span><span class="project-title" role="heading" aria-level="3">Making endpoint activity visible</span><span class="project-description">Wazuh monitoring, vulnerability visibility, and security dashboards.</span><span class="tags"><span>Wazuh</span><span>Grafana</span><span>Windows / Linux / macOS</span></span></span><span class="project-toggle"><span class="read-label">Case study</span><span class="plus" aria-hidden="true"></span></span></summary>
+          <div class="project-body"><div><h4>The problem</h4><p>Endpoint events and vulnerability findings need a consistent place to be reviewed, understood, and reported.</p></div><div><h4>My contribution</h4><p>Worked on Wazuh configuration, endpoint monitoring, vulnerability analysis, and dashboards. My work included reviewing findings and preparing recurring reports for the IT team.</p></div><div><h4>What it demonstrates</h4><p>Hands-on monitoring configuration and reporting across operating systems, with a focus on making security information usable.</p><p class="scope-note">Scope: contributed to SOC enablement; this is not a claim of sole ownership of the SOC.</p></div></div>
+        </details>
+        <details class="project" id="project-sla">
+          <summary><span class="project-index">02</span><span class="project-overview"><span class="project-category">SECURITY AUTOMATION</span><span class="project-title" role="heading" aria-level="3">Giving incident deadlines a workflow</span><span class="project-description">Case-based SLA assignment, milestone tracking, and escalation.</span><span class="tags"><span>n8n</span><span>IRIS</span><span>Microsoft Teams</span></span></span><span class="project-toggle"><span class="read-label">Case study</span><span class="plus" aria-hidden="true"></span></span></summary>
+          <div class="project-body"><div><h4>The problem</h4><p>Incident response, containment, and resolution have separate deadlines. Tracking them manually can make an approaching deadline easy to miss.</p></div><div><h4>My contribution</h4><p>Developed workflows for SLA assignment and periodic breach checking with n8n and IRIS. Defined case attributes for due times, milestone status, and escalation, with Teams notifications for warnings and breaches.</p></div><div><h4>What it demonstrates</h4><p>Translating a security process into explicit state, time-based checks, and actionable notifications.</p><p class="scope-note">Scope: workflow implementation; no measured response-time improvement is claimed.</p></div></div>
+        </details>
+        <details class="project" id="project-response">
+          <summary><span class="project-index">03</span><span class="project-overview"><span class="project-category">RESPONSE WORKFLOWS</span><span class="project-title" role="heading" aria-level="3">Connecting alerts to the next action</span><span class="project-description">Alert escalation, case updates, and approval-based response steps.</span><span class="tags"><span>Shuffle</span><span>IRIS</span><span>Teams</span><span>Python</span></span></span><span class="project-toggle"><span class="read-label">Case study</span><span class="plus" aria-hidden="true"></span></span></summary>
+          <div class="project-body"><div><h4>The problem</h4><p>An alert is only a starting point. Responders also need context, a case record, and a clear way to decide what should happen next.</p></div><div><h4>My contribution</h4><p>Built and worked with Shuffle workflows connecting alert information, Teams escalation messages, IRIS timeline updates, and user-input steps. Used Python to normalize nested alert data for downstream actions.</p></div><div><h4>What it demonstrates</h4><p>API integration, payload handling, and approval steps that keep people involved in security response.</p><p class="scope-note">Scope: escalation and approval workflow integration; autonomous remediation is not implied.</p></div></div>
+        </details>
+        <details class="project" id="project-vulnerabilities">
+          <summary><span class="project-index">04</span><span class="project-overview"><span class="project-category">VULNERABILITY MANAGEMENT</span><span class="project-title" role="heading" aria-level="3">Turning findings into readable reports</span><span class="project-description">Finding review, contextual triage, and remediation recommendations.</span><span class="tags"><span>Vulnerability analysis</span><span>Excel</span><span>Security reporting</span></span></span><span class="project-toggle"><span class="read-label">Case study</span><span class="plus" aria-hidden="true"></span></span></summary>
+          <div class="project-body"><div><h4>The problem</h4><p>A list of vulnerabilities does not tell an IT team which findings are relevant, why they matter, or what to review next.</p></div><div><h4>My contribution</h4><p>Reviewed vulnerability findings for validity, affected packages and versions, relevance, and priority. Prepared detailed assessment reports and sent recommendations to the IT team, reporting persistent findings in subsequent assessment cycles.</p></div><div><h4>What it demonstrates</h4><p>Technical triage and clear communication between security and IT, supported by structured reporting.</p><p class="scope-note">Scope: assessment and recommendations. I did not independently track and verify remediation closure.</p></div></div>
+        </details>
+      </div>
+      <aside class="prototype"><div><span class="prototype-label">EXPLORATION / PROOF OF CONCEPT</span><h3>Finding evidence in compliance documents</h3><p>A local prototype for organizing DPDPA controls and retrieving potentially relevant document passages using Python, ChromaDB, and semantic search. Built to support human review of evidence.</p></div><div class="prototype-note"><span class="eyebrow">ENGINEERING FOCUS</span><p>Document ingestion<br> Metadata &amp; retrieval<br> Traceable source evidence</p><small>Prototype work, not an automated compliance determination.</small></div></aside>
+    </section>
+
+    <section class="about section-wrap" id="about" aria-labelledby="about-title">
+      <div class="about-intro"><p class="eyebrow">A LITTLE CONTEXT</p><h2 id="about-title">An engineer’s approach<br> to security.</h2><p>I’m Edwin Charles Mathew, a software engineer working in cybersecurity at NeST Digital. My background spans enterprise software development, AI prototyping, and hands-on security operations.</p><p>I enjoy the work between tools: understanding a problem, connecting systems, and making the result clear enough for someone else to use and maintain.</p><a class="text-link" href="https://www.linkedin.com/in/edwincmathew" target="_blank" rel="noopener noreferrer">More on LinkedIn <span aria-hidden="true">↗</span></a></div>
+      <div class="experience"><h3 class="eyebrow">EXPERIENCE</h3><ol class="timeline"><li><div class="timeline-top"><h4>NeST Digital</h4><span>Nov 2025 — present</span></div><p class="role">Software Engineer — Cybersecurity</p><p>SOC enablement, vulnerability analysis, security dashboards, and workflow automation.</p></li><li><div class="timeline-top"><h4>NeST Digital</h4><span>2025</span></div><p class="role">Cybersecurity internship</p><p>Application-security testing, Wazuh monitoring, and vulnerability reporting.</p></li><li><div class="timeline-top"><h4>Aspen Digital Solutions</h4><span>2024 — 2025</span></div><p class="role">Internship — AI prototyping</p><p>Azure OpenAI prototypes for document extraction and insurance workflows.</p></li><li><div class="timeline-top"><h4>Infosys</h4><span>Earlier experience</span></div><p class="role">Enterprise software development</p><p>SAP ABAP reports and enhancements, debugging, testing, and Excel/VBA automation.</p></li></ol><div class="education"><h3 class="eyebrow">EDUCATION</h3><p><strong>M.Tech, Computer Science &amp; Engineering</strong><span>2025</span></p><p><strong>B.Tech, Computer Science &amp; Engineering</strong><span>2020</span></p><small>Mar Baselios College of Engineering and Technology</small></div></div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title"><div class="contact-inner"><div><p class="eyebrow light">LET’S TALK</p><h2 id="contact-title">Have a security problem<br> or a workflow to simplify?</h2><p>For project enquiries and engineering opportunities,<br> tell me what you’re working on.</p><a class="contact-email" href="mailto:edwinmathew316@gmail.com">edwinmathew316@gmail.com <span aria-hidden="true">↗</span></a></div><div class="contact-side"><a href="https://www.linkedin.com/in/edwincmathew" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/edwincm" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><p>Trivandrum, Kerala, India</p><small>Security assessments are limited to systems the client owns or is explicitly authorized to test.</small></div></div></section>
   </main>
+  <footer class="site-footer"><span>© 2026 Edwin Charles Mathew</span><span>Clarity in the details. Care in the work.</span><a href="#home">Back to top <span aria-hidden="true">↑</span></a></footer>
 </body>
 </html>
